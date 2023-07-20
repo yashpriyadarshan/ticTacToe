@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav id="navi">
+        <button class="start" onclick="reset()">Reset</button>
+        <button class="darkMode" onclick="toggleDark()">Toggle Dark Mode</button>
+    </nav>
+    <main>
+        <div class="row1">
+            <button id="col1" class="col1"></button>
+            <button id="col2" class="col2"></button>
+            <button id="col3" class="col3"></button>
+        </div>
+        <div class="row2">
+            <button id="col4" class="col4"></button>
+            <button id="col5" class="col5"></button>
+            <button id="col6" class="col6"></button>
+        </div>
+        <div class="row3">
+            <button id="col7" class="col7"></button>
+            <button id="col8" class="col8"></button>
+            <button id="col9" class="col9"></button>
+        </div>
+    </main>
+
+    <div class="player">
+        Current Player is <p id="cp" class="cp">X</p>
+    </div>
+
+    <div class="winner" id="winner">
+        The winner is 
+        <p class="won" id="won">X</p>
+    </div>
+
+    <div class="block" id="block"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
